@@ -1,0 +1,15 @@
+
+<%= link_to 'New Post', new_post_path %>
+
+<% @posts.each do |post| %>
+
+    <div class="post">
+      <h2><%=link_to "#{post.title}" ,post %> @ <%=post.created_at %></h2>
+      <div class="content"> <%= post.content %> </div>
+      </div>
+       
+<% end %>
+
+
+<br />
+
